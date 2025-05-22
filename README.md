@@ -37,20 +37,3 @@ The project consists of two main components:
 model = TimeSeriesTransformer(seq_len=100, d_model=10, nhead=2)
 output = model(input_data)  # input_data shape: [batch_size, seq_len, d_model]
 ```
-
-## Theoretical Analysis
-
-When stacking self-attention layers with positional encoding in a deep architecture, several issues arise:
-- Positional information can fade through layers
-- Models may underutilize positional cues
-- High capacity leads to overfitting on smaller datasets
-- Training instability without proper initialization and normalization
-- Computational and memory constraints with deeper architectures
-
-## Author
-
-[Your Name]
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details. 
